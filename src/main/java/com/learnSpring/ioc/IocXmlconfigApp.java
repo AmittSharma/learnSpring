@@ -17,7 +17,7 @@ public class IocXmlconfigApp {
 		try {
 			ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 			
-			Coach myCoach = context.getBean("myCoach", Coach.class);
+			Coach myCoach = context.getBean("myCoachForIoC", Coach.class);
 			
 			System.out.println(""+myCoach.getDailyWorkout());
 		} catch (BeansException e) {

@@ -3,7 +3,7 @@ package com.learnSpring.ioc;
 import org.springframework.beans.BeansException;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-public class MyXMLconfigApp {
+public class IocXmlconfigApp {
 
 	public static void main(String[] args) {
 		

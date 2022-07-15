@@ -2,7 +2,7 @@ package com.learnSpring.di;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-public class DiXmlConfigApp {
+public class ConstructorDiXmlConfigApp {
 
 	public static void main(String[] args) {
 		

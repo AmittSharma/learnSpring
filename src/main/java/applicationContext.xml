@@ -16,9 +16,19 @@
 	<bean id="myCoachForIoC" class="com.learnSpring.ioc.TrackCoach">
 	</bean>
 
-	<!-- constructor injection happens here -->
 	<bean id="myCoachForDi" class="com.learnSpring.di.CricketCoach">
+		<!-- constructor injection happens here -->
 		<constructor-arg ref="myFortuneService"></constructor-arg>
+	</bean>
+
+
+	<bean id="TrackCoachForDi" class="com.learnSpring.di.TrackCoach">
+		<!-- setter injection happens here -->
+		<property name="fortuneService" ref="myFortuneService"></property>
+
+		<!-- literals injection happens here -->
+		<property name="teamName" value="Chennai Super Kings"></property>
+		<property name="email" value="csk@gmail.com"></property>
 	</bean>
 </beans>
 

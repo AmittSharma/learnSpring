@@ -10,32 +10,22 @@ public class TrackCoach implements Coach {
 	public void setFortuneService(FortuneService fortuneService) {
 		this.fortuneService = fortuneService;
 	}
-	
-	
 
 	public String getTeamName() {
 		return teamName;
 	}
 
-
-
 	public void setTeamName(String teamName) {
 		this.teamName = teamName;
 	}
-
-
 
 	public String getEmail() {
 		return email;
 	}
 
-
-
 	public void setEmail(String email) {
 		this.email = email;
 	}
-
-
 
 	public String getDailyWorkout() {
 		return "Run 5k";

@@ -2,7 +2,7 @@ package com.learnSpring.beanLifeCycle;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-public class BeanLifeCycleApp {
+public class AnnotationConfigApp {
 
 	public static void main(String[] args) {
 

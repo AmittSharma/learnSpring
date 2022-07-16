@@ -3,10 +3,12 @@ package com.learnSpring.ioc;
 import org.springframework.beans.BeansException;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import ch.qos.logback.core.Context;
+
 public class IocXmlconfigApp {
 
 	public static void main(String[] args) {
-		
+
 		/*
 		 * Steps: 
 		 * create the spring container (context) 
@@ -16,13 +18,18 @@ public class IocXmlconfigApp {
 		 */
 		try {
 			ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
-			
+
 			Coach myCoach = context.getBean("myCoachForIoC", Coach.class);
-			
+
 			System.out.println(""+myCoach.getDailyWorkout());
+			
+			context.close();
+			
 		} catch (BeansException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+		} finally {
+		
 		}
 		/*
 		 * now if you want to change the implementation of myCoach from trackCoach to

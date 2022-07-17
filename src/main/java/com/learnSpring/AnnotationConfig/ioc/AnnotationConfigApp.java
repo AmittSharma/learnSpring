@@ -1,4 +1,4 @@
-package com.learnSpring.beanLifeCycle;
+package com.learnSpring.AnnotationConfig.ioc;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

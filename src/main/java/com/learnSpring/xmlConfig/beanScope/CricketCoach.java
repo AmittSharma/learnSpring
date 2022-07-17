@@ -1,4 +1,4 @@
-package com.learnSpring.beanScope;
+package com.learnSpring.xmlConfig.beanScope;
 
 public class CricketCoach implements Coach{
 	

@@ -1,4 +1,4 @@
-package com.learnSpring.beanLifeCycle;
+package com.learnSpring.xmlConfig.beanLifeCycle;
 
 public class CricketCoach implements Coach {
 	

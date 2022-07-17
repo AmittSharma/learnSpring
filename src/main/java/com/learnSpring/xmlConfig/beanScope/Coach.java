@@ -1,7 +1,8 @@
-package com.learnSpring.beanLifeCycle;
+package com.learnSpring.xmlConfig.beanScope;
 
 public interface Coach {
-	
+
 	public String getDailyWorkout();
+
 
 }
